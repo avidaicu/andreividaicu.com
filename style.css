@@ -1,0 +1,117 @@
+/*
+The primary stylesheet for Flexbox Menu Demo web page. This sheet pulls in all the components in order of appearance.
+*/
+
+@import url('CSS/reset.css');
+@import url('CSS/accessibility.css');
+@import url('CSS/layout.css');
+@import url('CSS/typography.css');
+@import url('CSS/masthead.css');
+@import url('CSS/navigation.css');
+@import url('CSS/images.css');
+@import url('CSS/banner.css');
+@import url('CSS/boxes.css');
+@import url('CSS/intro.css');
+@import url('CSS/levels.css');
+@import url('CSS/footer.css');
+@import url('CSS/single.css');
+@import url('CSS/marquee.css');
+
+.post-content img {
+    width: initial;
+}
+
+.single .intro:before,
+.single .intro:after {
+    content: initial;
+}
+
+.site-title a img {
+    float:left;
+    width: 101px;
+    margin-right:20px
+}
+.site-title a {
+    line-height: 90px;
+
+}
+
+.bare {
+    padding: 0;
+    margin: 0;
+    background:none;
+    border:none;
+}
+
+.no-border {
+    border:none;
+}
+
+.float-left {
+    float:left;
+}
+
+.float-right {
+    float:right;
+}
+
+.section-white {
+    background:#fff;
+    border:none;
+}
+
+.dark-grey {
+    background:#333;
+}
+
+#wcb {
+    text-align: left !important;
+}
+
+.widget-padding {
+    padding: 2.1rem 0;
+    padding-bottom: 4.2rem;
+}
+
+.margin-bottom {
+    margin-bottom: 60px;
+}
+
+.center-align {
+    text-align: center;
+    margin:0;
+}
+
+.intro{
+    line-height: 1.4em;
+    font-size: 19.422px;
+}
+
+.responsive-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.page-navigation {
+    float:right;
+    overflow: hidden;
+    text-decoration:none;
+}
+
+.page-navigation:hover {
+    text-decoration:underline;
+}
+
+.page-navigation span{
+    color:#000;
+    text-transform: uppercase;
+    line-height:30px;
+    font-weight: normal;
+}
+
+.page-navigation img{
+    float:right;
+    margin-left:15px;
+}
