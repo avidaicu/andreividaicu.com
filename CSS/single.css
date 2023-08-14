@@ -10,11 +10,15 @@ Single articles
 
 .post-title {
     padding: 0 0 .5em;
+    text-align: center;
+    font-weight:bold;
+}
+
+.post-title h1{
     font-family: 'Inter', sans-serif;
     font-weight: 900;
     font-size: 2.6em;
     line-height: 1em;
-    text-align: center;
 }
 
 .post-meta {

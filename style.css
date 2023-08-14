@@ -115,3 +115,36 @@ The primary stylesheet for Flexbox Menu Demo web page. This sheet pulls in all t
     float:right;
     margin-left:15px;
 }
+
+.post-meta-box {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom:40px
+}
+
+.post-meta-box li{
+    float:left;
+    margin-left: 20px;
+    font-weight:normal;
+    color:hsl(0, 0%, 50%);
+}
+
+.post-meta-box li:first-child{
+    margin-left: 0;
+}
+
+.block-columns {
+    display: flex; 
+    max-width: 120rem; 
+    flex-wrap: wrap; 
+    align-items: center;
+}
+
+.block-column {
+    flex-basis: 0;
+     flex-grow: 1; 
+     min-width: 0; 
+     overflow-wrap: break-word; 
+     word-break: break-word;
+}
