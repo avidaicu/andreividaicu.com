@@ -10,14 +10,10 @@ Footer
 .footer-area-top {
     background: #efefef;
     padding: 20px;
-    position: relative; 
-    overflow: hidden;
 }
 
 .footer-area-top img{
-    width:600px; 
     height:auto;
-    float:right;
 }
 
 .footer-area-bottom {

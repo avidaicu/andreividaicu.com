@@ -147,4 +147,5 @@ The primary stylesheet for Flexbox Menu Demo web page. This sheet pulls in all t
      min-width: 0; 
      overflow-wrap: break-word; 
      word-break: break-word;
+     margin-right:40px;
 }
