@@ -266,12 +266,13 @@ Main Navigation
 	/* Position drop-down menus absolutely */
 	.main-navigation ul ul.toggled-on {
 		position: absolute;
-		width: 12em;
+		min-width: 260px;
 		display: block;
 		z-index: 10;
 		margin-left: 0;
         padding: 0;
 		background: #000;
+		right: -10px;
 	}
 
 	.main-navigation ul ul ul.toggled-on {
