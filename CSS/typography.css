@@ -136,6 +136,8 @@ h4 {
 	.content {
 		font-size: 1.2em;
 		line-height: 1.375em;
+        border-top: 1px solid hsl(0, 0%, 80%);
+        padding-bottom: 4em;
 	}
 }
 

@@ -9,6 +9,17 @@
     <title>Andrei Vidaicu - PayOnline – Application Fee</title>
     <meta name="description" content="Application Fee - A project from Andrei Vidaicu's time at Study Group"/>
     <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-75YNX7NRMP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-75YNX7NRMP');
+    </script>
+    
 </head>
 
 <body>
@@ -16,27 +27,30 @@
 
     <header class="masthead">
         <div class="site-branding">
-            <h1 class="site-title"><a href="/">Andrei Vidaicu</a></h1>
+            <h1 class="site-title">
+                <a href="/">
+                    <img src="images/av-logo.png" alt="Andrei Vidaicu logo" width="101" height="90">
+                    Andrei Vidaicu
+                </a>
+            </h1>
         </div><!-- .site-title -->
         <nav id="site-navigation" class="main-navigation" role="navigation">
             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
             <div class="menu-main-menu-container">
                 <ul id="primary-menu" class="nav-menu">
-                    <li class="menu-item menu-item-has-children"><a href="index.html">About</a>
-                        <ul class="sub-menu">
-                            <li class="menu-item"><a href="nsw-design-system.html">NSW Design System</a></li>
-                        </ul>
+                    <li class="menu-item"><a href="nsw-design-system.html">NSW Design System</a>
                     </li>
-                    <li class="menu-item menu-item-has-children current-menu-item"><a href="work.html">Work</a>
+                    <li class="menu-item menu-item-has-children current-menu-item"><a href="work.html">Selected work</a>
                         <ul class="sub-menu">
-                            <li class="menu-item current-menu-item"><a href="NSW-side-navigation.html">NSW Side Navigation</a></li>
+                            <!--<li class="menu-item"><a href="NSW-side-navigation.html">NSW Side Navigation</a></li>-->
                             <li class="menu-item"><a href="find-a-course.html">Find a Course</a></li>
                             <li class="menu-item"><a href="pay-online.html">PayOnline</a></li>
                             <li class="menu-item current-menu-item"><a href="pay-online-application.html">PayOnline – Application Fee</a></li>
                             <li class="menu-item"><a href="agent-registration-form.html">Agent Registration Form</a></li>
                         </ul>
                     </li>
-                    <!-- <li class="menu-item"><a href="listening.html">On Listening</a></li> -->
+                    <!--<li class="menu-item"><a href="https://andreividaicu.com/images/AndreiVidaicu-Resume-Website.pdf" target="_blank">Download my resume</a>-->
+                    <!--</li>-->
             </ul></div>
         </nav>
     </header><!-- .masthead -->
@@ -58,32 +72,123 @@
                 <div class="post-content">
                     <p>In the third quarter of 2022 Study Group’s admissions team identified that there needed to be a way to reduce the amount of application forms submitted by agents. In turn this improves resource efficiency while at the same time improving conversions.</p>
 
-                    <h2>Speech Recognition in the Cloud</h2>
-                    <figure>
-                        <img src="images/satellite.jpg" alt="">
-                        <figcaption>Artist's conception of the NASA deployment of ACTS (Advanced Communication Technology Satellite). Part of NASA Commons,  <a href="https://www.flickr.com/photos/nasacommons/16317497577/in/album-72157650355483458/" target="_blank">available on Flickr</a>.</figcaption>
-                    </figure>
-                    <p>If you have an Android phone with the Google Launcher applied, try this: Turn it on and just say “OK, Google”. This automatically opens the voice to text search box where you can talk to the device and get it to do things like a search or send an email or whatever. It’s amazingly unamazing in a world where rapid technological advancement has made us jaded.</p>
-                    <p>What’s actually happening here is really quite amazing: The phone is constantly listening for specific voice queues, and when they are triggered it starts doing stuff. It gets even more impressive when you start dictating. You can actually see the phone guessing and correcting itself in real time as it does to make sure it gets everything exactly right. And watching this happen it’s clear there is a lot of contextual semantic processing going on out there in the cloud.</p>
-                    <p>What we have here is the dream of speech recognition come true in the cloud. And now that we have it people are (and should be?) terrified.</p>
-                    <h2>The Clash of Dreams and Reality</h2>
-                    <p>In our dreams we want to be able to talk to our devices and have them do our bidding. In Star Trek they had the Universal Translator. You can now get much the same feature by downloading the Google Translate app on your smartphone. Try it. It’s absolutely mind blowing. But for this technology to work we can’t just rely on our phones or computers or TVs. Language is complex and can’t be simplified to algorithms that can run on our local devices. For this technology to work we need the Cloud. And that means literally recording and sending your conversations over the web to a server that then parses the data, gleans the meaning of it, and acts according to your instructions.</p>
-                    <p>In short, when you talk to your device your device needs to actually understand what you are saying. Which is why your Smart TV and your cell phone and probably your computer and any other connected device in your house is in fact listening to you all the time.</p>
-                    <h2>The Question Isn’t If You are Being Recorded, But Who Listens</h2>
-                    <p>Most people will find this revelation rather unsettling, but the reality is this is not new. It’s been going on for years. And it’s a direct response to what we as consumers have been asking for.</p>
-                    <p>The bigger question is who’s listening. The device and service companies are pretty much unanimous in saying they are not recording and not listening. The recordings are purely for the computers. And in a way it is probably believable (unless you are talking about that website that wants to sell your face on a book. They are totally listening). I don’t actually fear the companies (much), but I do question their encryption algorithms.</p>
-                    <p>Post-Snowden we have confirmation of what many of us have known all along: If you put it on the Internet, some intelligence system will be listening in. So does this mean that someone is sitting in a bunker somewhere listening to our conversations while we watch TV, or eat dinner, or chat with our phones within reach? Not unlikely.</p>
-                    <p>Somewhere George Orwell is shaking his head in shame while dictating his next novel through his phone.</p>
+                    <h2>Requirements</h2>
+                    <ul>
+                        <li>Create a student journey in PayOnline UI, where students are required to pay an application fee for each application form submitted.</li>
+                        <li>Use the existing PayOnline branding and definition guidelines.</li>
+                    </ul>
+
+                    <h2>Approach</h2>
+                    <p>With a tight design deadline I gathered any existing insights from the initial PayOnline design build, did a workshop with the team to start prioritizing and help form the strategy. We synthesized the data and moved onto implementing a customer journey map, a user flow and a wireframe which I then presented to some of the key stakeholders.</p>
+
+                    <p>
+                        The optimal student journey within PayOnline, illustrating both the single and multiple destination country options, in the user flow (in the image below) 
+                    </p>
+
                 </div><!-- .post-content -->
             </article><!-- .post -->
+
+            <article>
+                <img src="images/app-fee-user-flow.jpg" alt="Application fee user flow" class="responsive-img" >
+            </article>
+
+            <article class="post">
+
+                <div class="post-content">
+                    <p>One of the key takeways from an ideation workshop was -</p>
+
+                    <strong>How can we display the application fees per destination country in the most efficient way?</strong>
+
+                    <ul>
+                        <li>Initially we had the countries in a select list and the application fees on the same page which would display the applications fees only once a selection had been made. The downside to this is meant that the student may be under the impression that they are paying all that they have selected.</li>
+                        <li>We had decided that if we split this into two steps it would make it more obvious that only one selection can be made, while reducing cognitive load.</li>
+                    </ul>
+                    
+                </div><!-- .post-content -->
+            </article><!-- .post -->
+
+            <article>
+                <div class="block-columns">
+                    <div class="block-column" style="text-align: center;">
+                        <p>Step 1 – Select destination country.</p>
+
+                        <img src="images/app-fee-desktop-step-1.jpg" alt="Select destination country" class="responsive-img" style="width: 500px; margin: 0 auto;">
+                    </div>
+                    <div class="block-column" style="text-align: center;">
+                        <p>Step 2 – Confirm application fees.</p>
+
+                        <img src="images/app-fee-desktop-step-2.jpg" alt="Confirm application fees" class="responsive-img" style="width: 500px; margin: 0 auto;">
+                    </div>
+                </div>
+            </article><!-- .post -->
+
+            <article class="post">
+                <div class="post-content" style="text-align: center;">
+                    <p>The final payment details screen.</p>
+                    <img src="images/app-fee-desktop-payment-details.jpg" alt="Payment details" class="responsive-img" style="width: 500px; margin: 0 auto;">
+                    
+                    <p>The payment status screen once a payment has been made (in this case no more outstanding fees to pay).</p>
+                    <img src="images/app-fee-desktop-payment-status.jpg" alt="Payment status" class="responsive-img" style="width: 500px; margin: 0 auto;">
+
+                    <h2>Result</h2>
+                    <p>As the primary focus of this project centered around fulfilling a business requirement within a constrained design timeline, the inclusion of usability testing was not feasible during this phase. Instead, valuable insights were derived from multiple presentations involving the project team, cross-functional groups, and stakeholders.</p>
+                </div><!-- .post-content -->
+                <section class="boxes" style="margin-bottom:50px;">
+                    <article class="box" style="width:100%;">
+                        <a href="https://figma.fun/U9EJ7G" style="width:100%; margin: 0 auto;" target="_blank">
+                            <div class="box-text">
+                                <h4 class="box-title">View high fidelity prototype (Desktop)</h4>
+                                <br>
+                                <div class="page-navigation">
+                                    <img src="images/arrow_right_alt.svg" alt="arrow right alt">
+                                </div>
+                            </div><!-- .box-text -->
+                        </a>
+                    </article><!-- .box -->
+                </section><!-- .boxes -->
+            </article><!-- .post -->
+
+
+
+            <article class="post">
+                <nav class="pagination-single section-inner only-one only-prev" aria-label="Post">
+                    <hr class="styled-separator is-style-wide" aria-hidden="true">
+                    <div class="pagination-single-inner">
+                        <a class="previous-post" href="pay-online.html">
+                            <span class="arrow" aria-hidden="true">←</span>
+                            <span class="title"><span class="title-inner">PayOnline</span></span>
+                        </a>
+
+                        <a class="next-post" href="agent-registration-form.html">
+                            <span class="arrow" aria-hidden="true">→</span>
+                                <span class="title"><span class="title-inner">Agent Registration Form</span></span>
+                        </a>           
+                    </div><!-- .pagination-single-inner -->
+                    <hr class="styled-separator is-style-wide" aria-hidden="true">
+                </nav>
+            </article>  
         </main><!-- .content -->
     </section><!-- .single -->
 
     <footer class="footer-area">
+        <div class="footer-area-top block-columns">
+            <div class="block-column"  style="margin-right:40px; float: left;
+    flex-grow: initial; flex-basis: initial;">
+                <img src="images/contact-me.jpg" alt="Contact me" style="width: 600px;" class="responsive-img">
+            </div>
+
+            <div class="block-column">
+                <h3>Here is where you can reach me.</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/andreividaicu/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://medium.com/@andreividaicu" target="_blank">Medium</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="footer-area-bottom">
-            <div class="widget-padding">
-                <aside class="float-right" style="display:flex;">
-                    <a href="sustainability.html" style="margin-right: 25px;">Sustainability</a>
+            <div class="widget-padding" style="padding:0;">
+                <aside class="float-right" style="display:flex; align-items: center;">
+                    <a href="sustainability.html" style="line-height:initial ">Sustainability</a>
                     <div id="wcb" class="carbonbadge"></div>
                 </aside>
 

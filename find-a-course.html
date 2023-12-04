@@ -9,6 +9,17 @@
     <title>Andrei Vidaicu - Find a Course</title>
     <meta name="description" content="Find a Course - A project from Andrei Vidaicu's time at Study Group"/>
     <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-75YNX7NRMP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-75YNX7NRMP');
+    </script>
+    
 </head>
 
 <body>
@@ -16,27 +27,30 @@
 
     <header class="masthead">
         <div class="site-branding">
-            <h1 class="site-title"><a href="/">Andrei Vidaicu</a></h1>
+            <h1 class="site-title">
+                <a href="/">
+                    <img src="images/av-logo.png" alt="Andrei Vidaicu logo" width="101" height="90">
+                    Andrei Vidaicu
+                </a>
+            </h1>
         </div><!-- .site-title -->
         <nav id="site-navigation" class="main-navigation" role="navigation">
             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
             <div class="menu-main-menu-container">
                 <ul id="primary-menu" class="nav-menu">
-                    <li class="menu-item menu-item-has-children"><a href="index.html">About</a>
-                        <ul class="sub-menu">
-                            <li class="menu-item"><a href="nsw-design-system.html">NSW Design System</a></li>
-                        </ul>
+                    <li class="menu-item"><a href="nsw-design-system.html">NSW Design System</a>
                     </li>
-                    <li class="menu-item menu-item-has-children current-menu-item"><a href="work.html">Work</a>
+                    <li class="menu-item menu-item-has-children current-menu-item"><a href="work.html">Selected work</a>
                         <ul class="sub-menu">
-                            <li class="menu-item current-menu-item"><a href="NSW-side-navigation.html">NSW Side Navigation</a></li>
+                            <!--<li class="menu-item"><a href="NSW-side-navigation.html">NSW Side Navigation</a></li>-->
                             <li class="menu-item current-menu-item"><a href="find-a-course.html">Find a Course</a></li>
                             <li class="menu-item"><a href="pay-online.html">PayOnline</a></li>
                             <li class="menu-item"><a href="pay-online-application.html">PayOnline – Application Fee</a></li>
                             <li class="menu-item"><a href="agent-registration-form.html">Agent Registration Form</a></li>
                         </ul>
                     </li>
-                    <!-- <li class="menu-item"><a href="listening.html">On Listening</a></li> -->
+                    <!--<li class="menu-item"><a href="https://andreividaicu.com/images/AndreiVidaicu-Resume-Website.pdf" target="_blank">Download my resume</a>-->
+                    <!--</li>-->
             </ul></div>
         </nav>
     </header><!-- .masthead -->
@@ -67,7 +81,7 @@
                     
                     <p>A request for Minimum Valuable Product (MVP) that should be implemented to provide a better user experience and increase agent satisfaction was put forward in Q2 of 2022.</p>
 
-                    <p>Throughout this period, I collaborated with an exceptionally skilled and encouraging team at Study Group, as is customary. The team comprises a marketing manager, a business analyst, a project manager, six engineers, the head of IT solutions, and representatives from other marketing departments.</p>
+                    <p>Throughout this period, I collaborated with a team consisting of a marketing manager, a business analyst, a project manager, six engineers, the head of IT solutions, and representatives from other marketing departments.</p>
                     
                     <p>My role was to oversee the entire product design process. This encompassed initial exploration, conceptualizing preliminary ideas, making regular presentations to cross-functional teams, and ultimately delivering finalized assets for the development phase.</p>
 
@@ -182,25 +196,57 @@
 
             <article>
                 <img src="images/find-a-course-mobile-1.jpg" alt="Find a Course - Mobile top" class="responsive-img" >
-            </article><!-- .post -->
+            </article>
 
             <article>
                 <img src="images/find-a-course-mobile-2.jpg" alt="Find a Course - Mobile bottom" class="responsive-img" >
-            </article><!-- .post -->
+            </article>
 
-            <a href="pay-online.html" class="page-navigation">
+            <!-- <a href="pay-online.html" class="page-navigation">
                 <span>PayOnline</span>
                 <img src="images/arrow_right_alt.svg" alt="arrow right alt" style="width:30px">
-            </a>
+            </a> -->
+
+            <article class="post">
+                <nav class="pagination-single section-inner only-one only-prev" aria-label="Post">
+                    <hr class="styled-separator is-style-wide" aria-hidden="true">
+                    <div class="pagination-single-inner">
+                        <a class="previous-post" href="NSW-side-navigation.html.html">
+                            <span class="arrow" aria-hidden="true">←</span>
+                            <span class="title"><span class="title-inner">NSW Side Navigation</span></span>
+                        </a>
+                        
+                        <a class="next-post" href="pay-online.html">
+                            <span class="arrow" aria-hidden="true">→</span>
+                                <span class="title"><span class="title-inner">PayOnline</span></span>
+                        </a>           
+                    </div><!-- .pagination-single-inner -->
+                    <hr class="styled-separator is-style-wide" aria-hidden="true">
+                </nav>
+            </article>  
 
         </main><!-- .content -->
     </section><!-- .single -->
 
     <footer class="footer-area">
+        <div class="footer-area-top block-columns">
+            <div class="block-column"  style="margin-right:40px; float: left;
+    flex-grow: initial; flex-basis: initial;">
+                <img src="images/contact-me.jpg" alt="Contact me" style="width: 600px;" class="responsive-img">
+            </div>
+
+            <div class="block-column">
+                <h3>Here is where you can reach me.</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/andreividaicu/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://medium.com/@andreividaicu" target="_blank">Medium</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="footer-area-bottom">
-            <div class="widget-padding">
-                <aside class="float-right" style="display:flex;">
-                    <a href="sustainability.html" style="margin-right: 25px;">Sustainability</a>
+            <div class="widget-padding" style="padding:0;">
+                <aside class="float-right" style="display:flex; align-items: center;">
+                    <a href="sustainability.html" style="line-height:initial ">Sustainability</a>
                     <div id="wcb" class="carbonbadge"></div>
                 </aside>
 

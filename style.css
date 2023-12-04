@@ -120,7 +120,8 @@ The primary stylesheet for Flexbox Menu Demo web page. This sheet pulls in all t
     list-style-type: none;
     display: flex;
     justify-content: center;
-    margin-bottom:40px
+    margin-bottom:40px;
+    padding: 0;
 }
 
 .post-meta-box li{
@@ -149,3 +150,111 @@ The primary stylesheet for Flexbox Menu Demo web page. This sheet pulls in all t
      word-break: break-word;
      margin-right:40px;
 }
+
+/* SINGLE PAGINATION */
+
+.pagination-single {
+    font-size: 24px;
+    margin-top: 8rem;
+}
+
+.pagination-single-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.pagination-single.only-next .pagination-single-inner {
+    justify-content: flex-end;
+}
+
+.pagination-single hr:first-child {
+    margin: 0 0 3rem 0;
+}
+
+.pagination-single hr:last-child {
+    margin: 3rem 0 0.8rem 0;
+}
+
+.pagination-single a + a {
+    margin: 0 0 0 4rem;
+}
+
+.pagination-single a .arrow {
+    margin: 0 1.5rem 0 0;
+}
+
+.pagination-single .next-post {
+    flex-direction: row-reverse;
+    text-align: right;
+    float: right;
+}
+
+.pagination-single .next-post .arrow {
+    margin: 0 0 0 1.5rem;
+    float: right;
+}
+
+entry-content hr,
+hr.styled-separator {
+	background: linear-gradient(to left, currentColor calc(50% - 16px), transparent calc(50% - 16px), transparent calc(50% + 16px), currentColor calc(50% + 16px));
+	background-color: transparent !important;
+	border: none;
+	height: 0.1rem;
+	overflow: visible;
+	position: relative;
+}
+
+.entry-content hr:not(.has-background),
+hr.styled-separator {
+	color: #6d6d6d;
+}
+
+.entry-content hr::before,
+.entry-content hr::after,
+hr.styled-separator::before,
+hr.styled-separator::after {
+	background: currentColor;
+	content: "";
+	display: block;
+	height: 1.6rem;
+	position: absolute;
+	top: calc(50% - 0.8rem);
+	transform: rotate(22.5deg);
+	width: 0.1rem;
+}
+
+.entry-content hr::before,
+hr.styled-separator::before {
+	left: calc(50% - 0.5rem);
+}
+
+.entry-content hr::after,
+hr.styled-separator::after {
+	right: calc(50% - 0.5rem);
+}
+
+.carbonbadge {
+    padding: 0.8em 1em;
+    padding-right: 0;
+}
+.author-avatar img {
+    height: 200px;
+    width: auto;
+}
+@media screen and (max-width: 799px) {
+    .author-avatar img {
+        width: 100%;
+        height: initial;
+    }
+    .post-content {
+        clear:both;
+    }
+    .main-area.content{
+        padding-top: 0;
+    }
+    .post-meta::before, .post-meta::after {
+        content: initial;
+    }
+}
+

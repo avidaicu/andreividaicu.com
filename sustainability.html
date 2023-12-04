@@ -9,6 +9,17 @@
     <title>Andrei Vidaicu - Sustainability</title>
     <meta name="description" content="Andrei Vidaicu - Helping the planet."/>
     <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-75YNX7NRMP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-75YNX7NRMP');
+    </script>
+    
 </head>
 
 <body>
@@ -18,7 +29,7 @@
         <div class="site-branding">
             <h1 class="site-title">
                 <a href="/">
-                    <img src="images/AV-logo.png" alt="Andrei Vidaicu logo" width="101" height="90">
+                    <img src="images/av-logo.png" alt="Andrei Vidaicu logo" width="101" height="90">
                     Andrei Vidaicu
                 </a>
             </h1>
@@ -29,21 +40,19 @@
             <!-- Main Menu -->
             <div class="menu-main-menu-container">
                 <ul id="primary-menu" class="nav-menu">
-                    <li class="menu-item current-menu-item menu-item-has-children"><a href="index.html">About</a>
-                        <ul class="sub-menu">
-                            <li class="menu-item"><a href="nsw-design-system.html">NSW Design System</a></li>
-                        </ul>
+                    <li class="menu-item"><a href="nsw-design-system.html">NSW Design System</a>
                     </li>
-                    <li class="menu-item menu-item-has-children"><a href="work.html">Work</a>
+                    <li class="menu-item menu-item-has-children"><a href="work.html">Selected work</a>
                         <ul class="sub-menu">
-                            <li class="menu-item current-menu-item"><a href="NSW-side-navigation.html">NSW Side Navigation</a></li>
+                            <!--<li class="menu-item"><a href="NSW-side-navigation.html">NSW Side Navigation</a></li>-->
                             <li class="menu-item"><a href="find-a-course.html">Find a Course</a></li>
                             <li class="menu-item"><a href="pay-online.html">PayOnline</a></li>
                             <li class="menu-item"><a href="pay-online-application.html">PayOnline – Application Fee</a></li>
                             <li class="menu-item"><a href="agent-registration-form.html">Agent Registration Form</a></li>
                         </ul>
                     </li>
-                    <!-- <li class="menu-item"><a href="listening.html">On Listening</a></li> -->
+                    <!--<li class="menu-item"><a href="https://andreividaicu.com/images/AndreiVidaicu-Resume-Website.pdf" target="_blank">Download my resume</a>-->
+                    <!--</li>-->
             </ul></div>
         </nav>
     </header><!-- .masthead -->
@@ -77,10 +86,24 @@
     </section><!-- .single -->
 
     <footer class="footer-area">
+        <div class="footer-area-top block-columns">
+            <div class="block-column"  style="margin-right:40px; float: left;
+    flex-grow: initial; flex-basis: initial;">
+                <img src="images/contact-me.jpg" alt="Contact me" style="width: 600px;" class="responsive-img">
+            </div>
+
+            <div class="block-column">
+                <h3>Here is where you can reach me.</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/andreividaicu/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://medium.com/@andreividaicu" target="_blank">Medium</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="footer-area-bottom">
-            <div class="widget-padding">
-                <aside class="float-right" style="display:flex;">
-                    <a href="sustainability.html" style="margin-right: 25px;">Sustainability</a>
+            <div class="widget-padding" style="padding:0;">
+                <aside class="float-right" style="display:flex; align-items: center;">
+                    <a href="sustainability.html" style="line-height:initial ">Sustainability</a>
                     <div id="wcb" class="carbonbadge"></div>
                 </aside>
 

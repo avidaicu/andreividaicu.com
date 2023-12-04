@@ -133,6 +133,7 @@ Main Navigation
 	color: #fff;
 	border: solid 2px #fff;
 	transition: all ease-out 400ms;
+	padding: 15px 20px;
 }
 
 .menu-toggle.hide {
@@ -191,6 +192,15 @@ Main Navigation
 	display: block;
 }
 
+@media screen and (max-width: 799px) {
+    .main-navigation.toggled ul ul {
+        padding:0;
+    }
+    .main-navigation.toggled a{
+        text-align:left;
+    }
+}
+
 /* Horizontal menu on wide screens */
 @media screen and (min-width: 50em) {
 
@@ -201,6 +211,7 @@ Main Navigation
         margin: 0 .5em;
         padding: 0;
         width: auto;
+        margin-top: 20px;
 	}
 
 	.nav-menu {

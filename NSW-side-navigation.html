@@ -9,6 +9,17 @@
     <title>Andrei Vidaicu - NSW Side Navigation</title>
     <meta name="description" content="NSW Side Navigation - A project from Andrei Vidaicu's working in a design system role with Digital NSW"/>
     <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-75YNX7NRMP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-75YNX7NRMP');
+    </script>
+    
 </head>
 
 <body>
@@ -16,27 +27,30 @@
 
     <header class="masthead">
         <div class="site-branding">
-            <h1 class="site-title"><a href="/">Andrei Vidaicu</a></h1>
+            <h1 class="site-title">
+                <a href="/">
+                    <img src="images/av-logo.png" alt="Andrei Vidaicu logo" width="101" height="90">
+                    Andrei Vidaicu
+                </a>
+            </h1>
         </div><!-- .site-title -->
         <nav id="site-navigation" class="main-navigation" role="navigation">
             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
             <div class="menu-main-menu-container">
                 <ul id="primary-menu" class="nav-menu">
-                    <li class="menu-item menu-item-has-children"><a href="index.html">About</a>
-                        <ul class="sub-menu">
-                            <li class="menu-item"><a href="nsw-design-system.html">NSW Design System</a></li>
-                        </ul>
+                    <li class="menu-item"><a href="nsw-design-system.html">NSW Design System</a>
                     </li>
-                    <li class="menu-item menu-item-has-children current-menu-item"><a href="work.html">Work</a>
+                    <li class="menu-item menu-item-has-children current-menu-item"><a href="work.html">Selected work</a>
                         <ul class="sub-menu">
                             <li class="menu-item current-menu-item"><a href="NSW-side-navigation.html">NSW Side Navigation</a></li>
-                            <li class="menu-item current-menu-item"><a href="find-a-course.html">Find a Course</a></li>
+                            <li class="menu-item"><a href="find-a-course.html">Find a Course</a></li>
                             <li class="menu-item"><a href="pay-online.html">PayOnline</a></li>
                             <li class="menu-item"><a href="pay-online-application.html">PayOnline – Application Fee</a></li>
                             <li class="menu-item"><a href="agent-registration-form.html">Agent Registration Form</a></li>
                         </ul>
                     </li>
-                    <!-- <li class="menu-item"><a href="listening.html">On Listening</a></li> -->
+                    <!--<li class="menu-item"><a href="https://andreividaicu.com/images/AndreiVidaicu-Resume-Website.pdf" target="_blank">Download my resume</a>-->
+                    <!--</li>-->
             </ul></div>
         </nav>
     </header><!-- .masthead -->
@@ -47,160 +61,120 @@
                 <img src="images/nsw-government-logo.jpg" alt="nsw government logo" width="259" height="280" style="width: 120px; margin: 0 auto;">
 
                 <div class="post-title">
-                    <h1>NSW Side Navigation</h1>
-                    <p>Course Finder Re-imagined</p>
+                    <h1>Rediscovering the NSW Side Navigation</h1>
+                    <!--<p>Simplicity rediscovered!</p>-->
                 </div>
 
                 <ul class="post-meta-box">
                     <li class="meta-icon">By Andrei Vidaicu</li>
-                    <li class="meta-date">September 18, 2022</li>
+                    <li class="meta-date">August 28, 2023</li>
                 </ul>
                 
                 <div class="post-content">
-                    <p>Due to substantial changes in the higher education landscape caused by the COVID-19 pandemic, there exists a pressing and critical requirement to enhance the user-friendliness of the existing Course Finder search tool.</p>
                     
-                    <p>Feedback from previous surveys measuring agent satisfaction reveals discontent among agents with the Course Finder tool.</p>
-
-                    <p>As one remark puts:</p>
-
-                    <h2 style="text-align: center;">“Course finder needs to enhance its user-friendliness and visual appeal, presenting relevant information at first glance.”</h2>
+                   <p> After assessing forty plus websites that adopt the NSW Design System, many of them have up to five levels of site hierarchy. It was clear that we needed to improve on the current side navigation component.</p>
                     
-                    <p>A request for Minimum Valuable Product (MVP) that should be implemented to provide a better user experience and increase agent satisfaction was put forward in Q2 of 2022.</p>
-
-                    <p>Throughout this period, I collaborated with an exceptionally skilled and encouraging team at Study Group, as is customary. The team comprises a marketing manager, a business analyst, a project manager, six engineers, the head of IT solutions, and representatives from other marketing departments.</p>
+                    <h2>Context</h2>
                     
-                    <p>My role was to oversee the entire product design process. This encompassed initial exploration, conceptualizing preliminary ideas, making regular presentations to cross-functional teams, and ultimately delivering finalized assets for the development phase.</p>
+                    <p>The initial phase aimed to enhance the existing static version, while also considering a future update that would introduce expand and collapse functionality.</p>
+                    
+                    <p>I created an open space for collaborating with our design system users on the Digital NSW community website.</p>
+                    
+                    <a href="https://community.digital.nsw.gov.au/t/collab-space-side-navigation-v2/1484" target="_blank">https://community.digital.nsw.gov.au/t/collab-space-side-navigation-v2/1484</a>
 
-                    <h2>Requirements</h2>
-                    <div class="block-columns" style="flex-wrap: nowrap; background: #efefef; padding:45px">
-                        <div class="block-column">
-                            <h3>In scope</h3>
-                            <p>Meet the needs of the project as a minimal viable product (MVP).</p>
-                        </div>
-                        <div class="block-column">
-                            <h3>Scalability</h3>
-                            <p>The ability to easily add new features in future releases.</p>
-                        </div>
-                        <div class="block-column">
-                            <h3>Responsive</h3>
-                            <p>Support both desktop and mobile (for agents at fairs and events).</p>
-                        </div>
-                    </div>
-
-                    <h2>Business goal</h2>
-
-                    <p>Increase agent satisfaction and boarding new students through the conversion of application forms being submitted.</p>
-
-                    <h2>User goal</h2>
-                    <p>An intuitive user interface for easy access to course information during counselling sessions with students and parents (in the office or at fairs/ events), with the end goal of converting an application.</p>
-
-                    <h2>A fresh encounter</h2>
-
-                </div><!-- .post-content -->
-            </article><!-- .post -->
-
-            <article>
-                <img src="images/SG-counrse-finder-flow.jpg" alt="Finder flow" class="responsive-img" >
-            </article><!-- .post -->
-
-            <article>
-                <div class="block-columns">
-                    <div class="block-column">
-                        <img src="images/find-a-course-responsive.JPG" alt="Responsive" class="responsive-img">
-                    </div>
-                    <div class="block-column">
-                        <h2>The need for going responsive.</h2>
-                        <p>Agents were additionally engaging in counseling students at fairs and events, utilizing solely mobile and tablet devices.
-                        </p>
-                    </div>
-                </div>
-                <div class="block-columns">
-                    <div class="block-column">
-                        <h2>Finding the most optimal entry point to initiate an initial search.</h2>
-                        <p>Agents indicated that the primary criterion for students when searching for courses is their preferred region of study. This aligns well with the information provided in the application form. Thus, we utilized this detail to guide the agents in selecting a specific region. This approach effectively refines the list of course options displayed to the students when they visit the website.</p>
-                    </div>
-                    <div class="block-column">
-                        <img src="images/find-a-course-pick-region.jpg" alt="Pick region">
-                    </div>
-                </div>
-
-                <div class="block-columns">
-                    <div class="block-column">
-                        <img src="images/find-a-course-positive-reinforcements.jpg" alt="Positive reinforcements">
-                    </div>
-                    <div class="block-column">
-                        <h2>Positive reinforcements.</h2>
-                        <p>Incorporate feedback notifications consistently to empower agents with a continuous sense of control, thereby enhancing the overall user experience through increased engagement.</p>
-                    </div>
-                </div>
-
-                <div class="block-columns">
-                    <div class="block-column">
-                        <h2>Agents used muscle memory when it came to shortlisting courses.</h2>
-                        <p>One of the key findings revealed during the usability testing was that agents anticipated the shortlisting process to resemble a shopping cart/checkout interaction. Additionally, participants who hadn't received any prior training were initially uncertain about the precise meaning of terms such as 'My shortlist' or 'Add to shortlist'.
-                        </p>
-                    </div>
-                    <div class="block-column">
-                        <img src="images/find-a-course-shortlist.jpg" alt="Shortlist">
-                    </div>
-                </div>
-            </article><!-- .post -->
-       
-            <article class="post">
-                <div class="post-content">
-                    <h2>Result</h2>
-
-                    <p>The revamp of the new course finder, now rebranded as 'Find a Course,' aims to align more effectively with the preferences of users, catering to their anticipated course search process. It’s a scalable solution which will also allow ‘Find a Course’ to unlock and support future fulfillment models at scale.
+                    <br> <br>
+                    
+                    <strong>Feedback received included</strong>
+                    <ul>
+                        <li>As subsections grew users found the indent hard to follow</li>
+                        <li>As subsections grew the red highlight lost it’s value and no longer aided with hierarchy</li>
+                        <li>Users found the UI cluttered and hard to group content</li>
+                    </ul>
+                    
+                    <h2>Research</h2>
+                     <p>A heuristics evaluation revealed some key usability issues that we would later evaluate through usability testing.</p>
+                     
+                    <p>We also explored a range of other leading government side navigations, identifying strengths and weaknesses, which gave valuable insights into emerging trends and best practices.</p>
+                    
+                    <p>This analysis helped create the foundations of the crucial areas to focus on moving forward.
                     </p>
-
-                    <section class="boxes" style="margin-bottom:50px;">
-                        <article class="box">
-                            <a href="https://xd.adobe.com/view/ca68a1c4-607e-4f72-9f22-d219d3a5231a-9f3b/?fullscreen" style="width:100%;" target="_blank">
-                                <div class="box-text">
-                                    <h4 class="box-title">View high fidelity prototype (Desktop)</h4>
-                                    <br>
-                                    <div class="page-navigation">
-                                        <img src="images/arrow_right_alt.svg" alt="arrow right alt">
-                                    </div>
-                                </div><!-- .box-text -->
-                            </a>
-                        </article><!-- .box -->
-                        <article class="box">
-                            <a href="https://xd.adobe.com/view/972a72a3-5abb-42d2-b853-900de149ada1-c279/?fullscreen" style="width:100%;" target="_blank">
-                                <div class="box-text">
-                                    <h4 class="box-title">View high fidelity prototype (Mobile)</h4>
-                                    <div class="page-navigation">
-                                        <img src="images/arrow_right_alt.svg" alt="arrow right alt">
-                                    </div>
-                                </div><!-- .box-text -->
-                            </a>
-                        </article><!-- .box -->
-                    </section><!-- .boxes -->
-
-                </div><!-- .post-content -->
+                    
+                    <h2>Exploration</h2>
+                    <p>Regular design reviews involving designers, developers, and stakeholders helped refine the design iteratively.</p>
+                    
+                    <h2>Evaluation</h2>
+                    <p>Conducted usability testing with a diverse group of users.</p>
+                    
+                    <strong>Key takeaways</strong> 
+                        <ul>
+                            <li>Non active main category and category relationship is hard to establish when categories appeared at the bottom of the page (below the fold).</li>
+                            
+                            <li>Level 2 items were inconsistent with the other levels.</li>
+                            
+                            <li>At first glance it's not easy to distinguish the nested levels of hierarchy.</li>
+                        </ul>
+                        
+                        <a href="https://miro.com/app/board/uXjVM3T7iXk=/?share_link_id=266903587044" target="_blank">https://miro.com/app/board/uXjVM3T7iXk=/?share_link_id=266903587044</a>
+                    
+                    
+                    <h2>Implementation and documentation</h2>
+                    <p>Futher design iterations were made based on the testing. Communication and documentation played a vital role in this phase to kick off the dev build. Worked closely with the developers providing detailed usage and guidelines, and interactive examples using our recent 'Component Spec Library'.</p>
+                    
+                    <a href="https://www.figma.com/file/dHW0Cos6ldvx7Q1cVrdAcz/NSW-DDS-Component-Spec-Library?type=design&node-id=5%3A2675&mode=design&t=zKMc7eBMnM3WYOzS-1" target="_blank">https://www.figma.com/file/dHW0Cos6ldvx7Q1cVrdAcz/NSW-DDS-Component-Spec-Library?type=design&node-id=5%3A2675&mode=design&t=zKMc7eBMnM3WYOzS-1</a>
+                    
+                    <h2>Learnings and takeaways</h2>
+                    <p>A pivotal part in the success of the side navigation component have been around the importance of collaboration - involving stakeholders, cross functional teams, our design system partners and different product design teams early on.</p>
+                    
+                     <p>Testing our assumptions through usability testing has not only evaluated that the design is working for our users, but it also revealed additional insights, improving it beyond the goals that we set out to achieve.</p>
+                    
+                    <a href="https://www.figma.com/proto/YNN1zouHecZ3UFdJEZ5ggY/DS-Components?page-id=5951%3A61022&type=design&node-id=6375-74097&viewport=1703%2C-6044%2C0.25&t=tUc31NtS4nQa7Pcj-8&scaling=min-zoom&starting-point-node-id=6375%3A74097&hide-ui=1" target="_blank">https://www.figma.com/proto/YNN1zouHecZ3UFdJEZ5ggY/DS-Components?page-id=5951%3A61022&type=design&node-id=6375-74097&viewport=1703%2C-6044%2C0.25&t=tUc31NtS4nQa7Pcj-8&scaling=min-zoom&starting-point-node-id=6375%3A74097&hide-ui=1</a>
+                </div>
+                
             </article><!-- .post -->
-
+            
+            <br>
+            
             <article>
-                <img src="images/find-a-course-mobile-1.jpg" alt="Find a Course - Mobile top" class="responsive-img" >
-            </article><!-- .post -->
+                <img src="images/side-navigation-component.jpg" alt="sidebar component example">
+            </article>
 
-            <article>
-                <img src="images/find-a-course-mobile-2.jpg" alt="Find a Course - Mobile bottom" class="responsive-img" >
-            </article><!-- .post -->
-
-            <a href="pay-online.html" class="page-navigation">
-                <span>PayOnline</span>
-                <img src="images/arrow_right_alt.svg" alt="arrow right alt" style="width:30px">
-            </a>
+            <article class="post">
+                <nav class="pagination-single section-inner only-one only-prev" aria-label="Post">
+                    <hr class="styled-separator is-style-wide" aria-hidden="true">
+                    <div class="pagination-single-inner">
+                        
+                        <a class="next-post" href="find-a-course.html">
+                            <span class="arrow" aria-hidden="true">→</span>
+                                <span class="title"><span class="title-inner">Find a Course</span></span>
+                        </a> 
+                        
+                    </div><!-- .pagination-single-inner -->
+                    <hr class="styled-separator is-style-wide" aria-hidden="true">
+                </nav>
+            </article>  
 
         </main><!-- .content -->
     </section><!-- .single -->
 
     <footer class="footer-area">
+        <div class="footer-area-top block-columns">
+            <div class="block-column"  style="margin-right:40px; float: left;
+    flex-grow: initial; flex-basis: initial;">
+                <img src="images/contact-me.jpg" alt="Contact me" style="width: 600px;" class="responsive-img">
+            </div>
+
+            <div class="block-column">
+                <h3>Here is where you can reach me.</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/andreividaicu/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://medium.com/@andreividaicu" target="_blank">Medium</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="footer-area-bottom">
-            <div class="widget-padding">
-                <aside class="float-right" style="display:flex;">
-                    <a href="sustainability.html" style="margin-right: 25px;">Sustainability</a>
+            <div class="widget-padding" style="padding:0;">
+                <aside class="float-right" style="display:flex; align-items: center;">
+                    <a href="sustainability.html" style="line-height:initial ">Sustainability</a>
                     <div id="wcb" class="carbonbadge"></div>
                 </aside>
 
