@@ -64,6 +64,10 @@ Main Navigation
 	border-top: 0;
 }
 
+.main-navigation .nav-menu > li:first-child a{
+	display: inline-flex;
+}
+
 .main-navigation .menu-item-has-children > a,
 .main-navigation .page_item_has_children > a{
 	padding-right: 48px;
